@@ -23,7 +23,5 @@ class ReservationFactory extends Factory
             'guests' => $this->faker->numberBetween(1, 20),
             'note' => $this->faker->optional()->sentence(),
         ];
-
-        Reservation::factory()->count(10)->create();
     }
 }
